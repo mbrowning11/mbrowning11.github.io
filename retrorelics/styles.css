@@ -1,0 +1,465 @@
+/* General Reset */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated Logo Styling */
+.logo {
+    font-size: 70px;
+    font-family: 'Press Start 2P', cursive; /* Pixelated retro gaming font */
+    background: linear-gradient(135deg, #00ff99, #ffcc33, #ff3399, #3399ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 
+        3px 3px 0 #222,  /* Dark retro shadow */
+        -1px -1px 0 #ff33cc, /* Highlighting */
+        1px -1px 0 #00ffcc; /* Glowy secondary tone */
+    animation: holographic-shift 4s infinite ease-in-out;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Holographic Shift Animation */
+@keyframes holographic-shift {
+    0% {
+        background-position: 0% 50%;
+        text-shadow: 
+            3px 3px 0 #222, 
+            -1px -1px 0 #ff33cc, 
+            1px -1px 0 #00ffcc,
+            0 0 10px #ff3399, 
+            0 0 20px #3399ff;
+    }
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 
+            3px 3px 0 #000, 
+            -1px -1px 0 #00ffcc, 
+            1px -1px 0 #ff3399,
+            0 0 20px #ffcc33, 
+            0 0 30px #00ff99;
+    }
+    100% {
+        background-position: 0% 50%;
+        text-shadow: 
+            3px 3px 0 #222, 
+            -1px -1px 0 #ff33cc, 
+            1px -1px 0 #00ffcc,
+            0 0 10px #3399ff, 
+            0 0 20px #ff3399;
+    }
+}
+
+/* Font Import for Pixelated Retro Style */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Background Update for a Funky Retro Feel */
+body {
+    font-family: 'Press Start 2P', monospace; /* Consistent pixelated font */
+    background: radial-gradient(circle, #1a1a1a 60%, #333 100%); /* Dark radial gradient */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(145deg, #ff007f, #ff00ff); /* Neon pink to purple gradient */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 10px solid white;
+    font-family: 'Digital-7', monospace; /* Digital font for navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #3b3b98, #6161cc); /* Retro blue gradient */
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.navbar a:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 #000;
+    background: linear-gradient(145deg, #6161cc, #3b3b98);
+}
+.navbar a:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0 #000;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+/* Timeline with 80s/90s Retro Colors */
+.timeline {
+    background: #8cc7ff; /* Light neon blue background */
+    width: 25%;
+    padding: 30px;
+    overflow-y: auto;
+    border-right: 2px solid #333;
+}
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Digital-7', monospace; /* Digital font for heading */
+    color: #ff0099; /* Neon pink text */
+}
+.timeline .year-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.timeline button {
+    width: 80%;
+    padding: 12px 0;
+    background: linear-gradient(145deg, #00ff99, #33ffcc); /* Vibrant teal gradient */
+    color: #1a1a1a; /* Dark contrast text */
+    border: 2px solid #1a1a1a;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Digital-7', monospace; /* Digital font for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 0 #1a1a1a;
+}
+.timeline button:hover {
+    background: linear-gradient(145deg, #33ffcc, #00ff99); /* Reverse gradient on hover */
+    box-shadow: 5px 5px 0 #000;
+    transform: translateY(-3px);
+}
+.timeline button:active {
+    background: #00ff99; /* Solid teal color when active */
+    box-shadow: 2px 2px 0 #000;
+    transform: translateY(2px);
+}
+
+/* General Reset */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated Logo Styling */
+.logo {
+    font-size: 70px;
+    font-family: 'Press Start 2P', cursive; /* Pixelated retro gaming font */
+    background: linear-gradient(135deg, #00ff99, #ffcc33, #ff3399, #3399ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 
+        3px 3px 0 #222,  /* Dark retro shadow */
+        -1px -1px 0 #ff33cc, /* Highlighting */
+        1px -1px 0 #00ffcc; /* Glowy secondary tone */
+    animation: holographic-shift 4s infinite ease-in-out;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Holographic Shift Animation */
+@keyframes holographic-shift {
+    0% {
+        background-position: 0% 50%;
+        text-shadow: 
+            3px 3px 0 #222, 
+            -1px -1px 0 #ff33cc, 
+            1px -1px 0 #00ffcc,
+            0 0 10px #ff3399, 
+            0 0 20px #3399ff;
+    }
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 
+            3px 3px 0 #000, 
+            -1px -1px 0 #00ffcc, 
+            1px -1px 0 #ff3399,
+            0 0 20px #ffcc33, 
+            0 0 30px #00ff99;
+    }
+    100% {
+        background-position: 0% 50%;
+        text-shadow: 
+            3px 3px 0 #222, 
+            -1px -1px 0 #ff33cc, 
+            1px -1px 0 #00ffcc,
+            0 0 10px #3399ff, 
+            0 0 20px #ff3399;
+    }
+}
+
+/* Font Import for Pixelated Retro Style */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Background Update for a Funky Retro Feel */
+body {
+    font-family: 'Press Start 2P', monospace; /* Consistent pixelated font */
+    background: radial-gradient(circle, #1a1a1a 60%, #333 100%); /* Dark radial gradient */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(145deg, #ff007f, #ff00ff); /* Neon pink to purple gradient */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 10px solid white;
+    font-family: 'Digital-7', monospace; /* Digital font for navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+.navbar a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #3b3b98, #6161cc); /* Retro blue gradient */
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.navbar a:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0 #000;
+    background: linear-gradient(145deg, #6161cc, #3b3b98);
+}
+.navbar a:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 0 #000;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+/* Timeline with 80s/90s Retro Colors */
+.timeline {
+    background: #8cc7ff; /* Light neon blue background */
+    width: 25%;
+    padding: 30px;
+    overflow-y: auto;
+    border-right: 2px solid #333;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Digital-7', monospace; /* Digital font for heading */
+    color: #ff0099; /* Neon pink text */
+}
+
+.timeline .year-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.timeline button {
+    width: 80%;
+    padding: 12px 0;
+    background: linear-gradient(145deg, #00ff99, #33ffcc); /* Vibrant teal gradient */
+    color: #1a1a1a; /* Dark contrast text */
+    border: 2px solid #1a1a1a;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Digital-7', monospace; /* Digital font for buttons */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 0 #1a1a1a;
+    box-sizing: border-box; /* Ensure the button width includes border and padding */
+}
+
+.timeline button:hover {
+    background: linear-gradient(145deg, #33ffcc, #00ff99); /* Reverse gradient on hover */
+    box-shadow: 5px 5px 0 #000;
+    transform: translateY(-3px);
+}
+
+.timeline button:active {
+    background: #00ff99; /* Solid teal color when active */
+    box-shadow: 2px 2px 0 #000;
+    transform: translateY(2px);
+}
+
+#welcome-message {
+    text-align: center;
+    margin-top: 200px; /* Adjust as needed */
+    color: #1a1a1a; /* Dark text for readability */
+    font-family: 'Digital-7', monospace; /* Retro font */
+    display: block;
+}
+
+#welcome-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#welcome-message p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Product List with Matching Teal Background */
+.product-list {
+    background: #33ffcc; /* Vibrant teal background to match timeline buttons */
+    width: 75%;
+    padding: 10px;
+    overflow-y: auto;
+    color: #1a1a1a; /* Dark text for contrast */
+    border-left: 2px solid #1a1a1a; /* Adds a subtle divider from the timeline */
+}
+
+.product-list h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Digital-7', monospace; /* Digital font for product list heading */
+}
+.product-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-list li {
+    padding: 10px;
+    background: #fff;
+    margin: 10px 0;
+    border: 1px solid #333;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Digital-7', monospace; /* Digital font for list items */
+}
+
+/* Product Images */
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+    padding: 20px;
+    justify-items: center; /* Center images horizontally */
+}
+
+/* Individual image styling */
+.product-images img {
+    width: 100%; /* Make the images responsive */
+    max-width: 200px; /* Set a consistent size */
+    height: auto;
+    border: 5px solid #333; /* Retro-style border */
+    border-radius: 15px; /* Rounded corners for a retro feel */
+    background: #fff; /* Background for the border */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Hover effect: Add glow */
+.product-images img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 8px 8px 0 #000, 0 0 20px #ff33cc, 0 0 40px #33ccff; /* Neon glow shadow */
+    filter: brightness(1.2); /* Enhance brightness for a glowing effect */
+}
+
+/* Active effect when image is clicked */
+.product-images img:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 3px 3px 0 #333; /* Reduced shadow on click */
+    filter: brightness(1); /* Remove brightness effect */
+}
+
+/* Product Detail Section */
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #33ffcc; /* Matching teal background */
+    border: 2px solid #1a1a1a; /* Solid border for retro effect */
+}
+
+/* Product Content Section */
+.product-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%; /* Matches the size of the product-list section */
+    padding: 20px;
+}
+/* Product Image */
+.product-image img {
+    max-width: 500px; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #333;
+    border-radius: 15px;
+    background: #fff;
+    margin-bottom: 20px; /* Adds spacing below the image */
+}
+
+/* Product Information */
+.product-info {
+    text-align: center;
+    font-family: 'Digital-7', monospace; /* Retro font */
+    width: 80%; /* Center the text and reduce width */
+}
+
+.product-info h2 {
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    line-height: 1.5;
+}

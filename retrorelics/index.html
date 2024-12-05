@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Relics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">Retro Relics</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="radio.html">Radio</a></li>
+        </ul>
+    </div>
+    <main>
+        <aside class="timeline">
+            <div class="year-buttons">
+                <button onclick="showProducts('1980')">1980</button>
+                <button onclick="showProducts('1981')">1981</button>
+                <button onclick="showProducts('1982')">1982</button>
+                <button onclick="showProducts('1983')">1983</button>
+                <button onclick="showProducts('1984')">1984</button>
+                <button onclick="showProducts('1985')">1985</button>
+                <button onclick="showProducts('1986')">1986</button>
+                <button onclick="showProducts('1987')">1987</button>
+                <button onclick="showProducts('1988')">1988</button>
+                <button onclick="showProducts('1989')">1989</button>
+                <button onclick="showProducts('1990')">1990</button>
+                <button onclick="showProducts('1991')">1991</button>
+                <button onclick="showProducts('1992')">1992</button>
+                <button onclick="showProducts('1993')">1993</button>
+                <button onclick="showProducts('1994')">1994</button>
+                <button onclick="showProducts('1995')">1995</button>
+                <button onclick="showProducts('1996')">1996</button>
+                <button onclick="showProducts('1997')">1997</button>
+                <button onclick="showProducts('1998')">1998</button>
+                <button onclick="showProducts('1999')">1999</button>
+            </div>
+        </aside>
+        <section class="product-list">
+    <div id="welcome-message">
+        <h2>Welcome to Retro Relics!</h2>
+        <p>Explore iconic products of the 80s and 90s. Click a year to start your journey!</p>
+    </div>
+            <ul id="product-container">
+                <!-- Products dynamically populated by JavaScript -->
+            </ul>
+            <div id="product-images" class="product-images">
+                <!-- Wrap each image with an anchor tag linking to the product's page -->
+                <a href="silenttype.html">
+                    <img src="silenttype.jpg" data-year="1980" alt="Silent Type">
+                </a>
+                <a href="pocari.html">
+                    <img src="pocari.jpg" data-year="1980" alt="Pocari Sweat">
+                </a>
+                <a href="gamewatch.html">
+                    <img src="gamewatch.jpg" data-year="1980" alt="Game & Watch">
+                </a>
+                <a href="rubikscube.html">
+                    <img src="rubikscube.jpg" data-year="1980" alt="Rubik's Cube">
+                </a>
+                <a href="walkman.html">
+                    <img src="walkman.jpg" data-year="1980" alt="Sony Walkman (TPS-L2)">
+                </a>
+                <a href="atari2600.html">
+                    <img src="atari2600.jpg" data-year="1980" alt="Atari 2600 (VCS)">
+                </a>
+                <a href="pacman.html">
+                    <img src="pacman.jpg" data-year="1980" alt="Pac-Man Arcade Game">
+                </a>
+                <a href="postitnotes.html">
+                    <img src="postitnotes.jpg" data-year="1980" alt="Post-it Notes">
+                </a>
+                <a href="starwarsfigure.html">
+                    <img src="starwarsfigure.jpg" data-year="1980" alt="Kenner Star Wars Action Figures">
+                </a>
+                <a href="ibm.html">
+                    <img src="ibm.jpg" data-year="1981" alt="IBM Personal Computer">
+                </a>
+                <a href="walkmanwm2.html">
+                    <img src="walkmanwm2.jpg" data-year="1981" alt="Walkman WM-2">
+                </a>
+                <a href="donkeykong.html">
+                    <img src="donkeykong.jpg" data-year="1981" alt="Donkey Kong Arcade Game">
+                </a>
+                <a href="autofocus.html">
+                    <img src="autofocus.jpg" data-year="1981" alt="Polaroid Sun Autofocus 660">
+                </a>
+                <a href="rubikssnake.html">
+                    <img src="rubikssnake.jpg" data-year="1981" alt="Rubik's Snake">
+                </a>
+                <a href="legotownset.html">
+                    <img src="legotownset.jpg" data-year="1981" alt="LEGO Town Sets">
+                </a>
+                <a href="pacmanfever.html">
+                    <img src="pacmanfever.jpg" data-year="1981" alt="Pac-Man Fever Album">
+                </a>
+                <a href="garfieldphone.html">
+                    <img src="garfieldphone.jpg" data-year="1981" alt="Garfield Phone">
+                </a>
+                <a href="commodore64.html">
+                    <img src="commodore64.jpg" data-year="1982" alt="Commodore 64">
+                </a>
+                <a href="jvcvideocasette.html">
+                    <img src="jvcvideocasette.jpg" data-year="1982" alt="JVC HR-3300U VCR">
+                </a>
+                <a href="trivialpursuit.html">
+                    <img src="trivialpursuit.jpg" data-year="1982" alt="Trivial Pursuit">
+                </a>
+                <a href="colecovision.html">
+                    <img src="colecovision.jpg" data-year="1982" alt="ColecoVision">
+                </a>
+                <a href="kossheadphones.html">
+                    <img src="kossheadphones.jpg" data-year="1982" alt="Koss Porta Pro Headphones">
+                </a>
+                <a href="etfigures.html">
+                    <img src="etfigures.jpg" data-year="1982" alt="E.T. Action Figures">
+                </a>
+                <a href="ponytoys.html">
+                    <img src="ponytoys.jpg" data-year="1982" alt="My Little Pony Toys">
+                </a>
+                <a href="fujifilm.html">
+                    <img src="fujifilm.jpg" data-year="1982" alt="Fujifilm QuickSnap">
+                </a>
+                <a href="nes.html">
+                    <img src="nes.jpg" data-year="1983" alt="Nintendo Entertainment System (NES)">
+                </a>
+                <a href="cabbagepatch.html">
+                    <img src="cabbagepatch.jpg" data-year="1983" alt="Cabbage Patch Kids">
+                </a>
+                <a href="gshock.html">
+                    <img src="gshock.jpg" data-year="1983" alt="Casio G-Shock Watches">
+                </a>
+                <a href="boombox.html">
+                    <img src="boombox.jpg" data-year="1983" alt="Boom Box">
+                </a>
+                <a href="returnofjedi.html">
+                    <img src="returnofjedi.jpg" data-year="1983" alt="Star Wars: Return of the Jedi Action Figures">
+                </a>
+                <a href="zxspectrum.html">
+                    <img src="zxspectrum.jpg" data-year="1983" alt="ZX Spectrum">
+                </a>
+                <a href="atarijr.html">
+                    <img src="atarijr.jpg" data-year="1983" alt="Atari 2600 Jr.">
+                </a>
+                <a href="swatchwatch.html">
+                    <img src="swatchwatch.jpg" data-year="1983" alt="Swatch Watch">
+                </a>
+                <a href="macintosh.html">
+                    <img src="macintosh.jpg" data-year="1984" alt="Apple Macintosh">
+                </a>
+                <a href="transformers.html">
+                    <img src="transformers.jpg" data-year="1984" alt="Transformers Toys">
+                </a>
+                <a href="carebears.html">
+                    <img src="carebears.jpg" data-year="1984" alt="Care Bears">
+                </a>
+                <a href="discman.html">
+                    <img src="discman.jpg" data-year="1984" alt="Sony Discman D-50">
+                </a>
+                <a href="tmntcomic.html">
+                    <img src="tmntcomic.jpg" data-year="1984" alt="Teenage Mutant Ninja Turtles Comics">
+                </a>
+                <a href="powerwheels.html">
+                    <img src="powerwheels.jpg" data-year="1984" alt="Power Wheels">
+                </a>
+                <a href="ghostbustersfigure.html">
+                    <img src="ghostbustersfigure.jpg" data-year="1984" alt="Ghostbusters Action Figures">
+                </a>
+                <a href="tvwatch.html">
+                    <img src="tvwatch.jpg" data-year="1984" alt="Seiko TV Watch">
+                </a>
+                <a href="teddyruxpin.html">
+                    <img src="teddyruxpin.jpg" data-year="1985" alt="Teddy Ruxpin">
+                </a>
+                <a href="supermario.html">
+                    <img src="supermario.jpg" data-year="1985" alt="Super Mario Bros. Game">
+                </a>
+                <a href="pictionary.html">
+                    <img src="pictionary.jpg" data-year="1985" alt="Pictionary">
+                </a>
+                <a href="handycam.html">
+                    <img src="handycam.jpg" data-year="1985" alt="Sony Handycam">
+                </a>
+                <a href="airjordan.html">
+                    <img src="airjordan.jpg" data-year="1985" alt="Air Jordan 1">
+                </a>
+                <a href="madballs.html">
+                    <img src="madballs.jpg" data-year="1985" alt="Madballs">
+                </a>
+                <a href="walkmanwmf5.html">
+                    <img src="walkmanwmf5.jpg" data-year="1985" alt="Walkman WM-F5">
+                </a>
+                <a href="obsession.html">
+                    <img src="obsession.jpg" data-year="1985" alt="Calvin Klein Obsession Fragrance">
+                </a>
+                <a href="donkeykong.html">
+                    <img src="donkeykong.jpg" data-year="1986" alt="Donkey Kong Arcade Game">
+                </a>
+                <a href="autofocus.html">
+                    <img src="autofocus.jpg" data-year="1987" alt="Polaroid Sun Autofocus 660">
+                </a>
+                <a href="rubikssnake.html">
+                    <img src="rubikssnake.jpg" data-year="1988" alt="Rubik's Snake">
+                </a>
+                <a href="legotownset.html">
+                    <img src="legotownset.jpg" data-year="1989" alt="LEGO Town Sets">
+                </a>
+                <a href="pacmanfever.html">
+                    <img src="pacmanfever.jpg" data-year="1990" alt="Pac-Man Fever Album">
+                </a>
+                <a href="garfieldphone.html">
+                    <img src="garfieldphone.jpg" data-year="1991" alt="Garfield Phone">
+                </a>
+                <a href="commodore64.html">
+                    <img src="commodore64.jpg" data-year="1992" alt="Commodore 64">
+                </a>
+                <a href="jvcvideocasette.html">
+                    <img src="jvcvideocasette.jpg" data-year="1993" alt="JVC HR-3300U VCR">
+                </a>
+                <a href="trivialpursuit.html">
+                    <img src="trivialpursuit.jpg" data-year="1994" alt="Trivial Pursuit">
+                </a>
+                <a href="colecovision.html">
+                    <img src="colecovision.jpg" data-year="1995" alt="ColecoVision">
+                </a>
+                <a href="kossheadphones.html">
+                    <img src="kossheadphones.jpg" data-year="1996" alt="Koss Porta Pro Headphones">
+                </a>
+                <a href="etfigures.html">
+                    <img src="etfigures.jpg" data-year="1997" alt="E.T. Action Figures">
+                </a>
+                <a href="ponytoys.html">
+                    <img src="ponytoys.jpg" data-year="1998" alt="My Little Pony Toys">
+                </a>
+                <a href="fujifilm.html">
+                    <img src="fujifilm.jpg" data-year="1999" alt="Fujifilm QuickSnap">
+                </a>
+                <!-- Add more linked images as needed -->
+            </div>
+        </section>
+    </main>
+   <script>
+    function showProducts(year) {
+        const productImages = document.querySelectorAll('#product-images a');
+        const welcomeMessage = document.getElementById('welcome-message');
+        const productContainer = document.getElementById('product-container');
+
+        // Clear previous content
+        productContainer.innerHTML = '';
+        productImages.forEach(link => {
+            link.style.display = 'none'; // Hide all product links
+        });
+
+        if (year >= 1986 && year <= 1999) {
+            // Show "Coming Soon" for years 1986–1999
+            welcomeMessage.style.display = 'none'; // Hide welcome message
+            productContainer.innerHTML = `
+                <div class="coming-soon">
+                    <h2>Coming Soon!</h2>
+                    <p>Stay tuned for more exciting updates from ${year}!</p>
+                </div>
+            `;
+        } else if (year) {
+            // Show products for selected year
+            welcomeMessage.style.display = 'none'; // Hide welcome message
+            const filteredImages = document.querySelectorAll(`#product-images a img[data-year="${year}"]`);
+            filteredImages.forEach(img => {
+                img.parentElement.style.display = 'block'; // Show product image links
+            });
+        } else {
+            // Show welcome message if no year is selected
+            welcomeMessage.style.display = 'block';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check URL parameters for a 'year' and display products accordingly
+        const params = new URLSearchParams(window.location.search);
+        const year = params.get('year');
+        if (year) {
+            showProducts(year); // Show products for a specific year
+        } else {
+            showProducts(''); // Default state
+        }
+    });
+</script>
+</body>
+</html>

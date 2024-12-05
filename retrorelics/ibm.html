@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Relics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1 class="logo">Retro Relics</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="radio.html">Radio</a></li>
+        </ul>
+    </div>
+
+    <main>
+        
+
+        <!-- Product Content Section -->
+        <section class="product-list">
+            <div class="product-content">
+                <!-- Product Image -->
+                <div class="product-image">
+                    <img src="ibm.jpg" alt="IBM Personal Computer">
+                </div>
+
+                <!-- Product Information -->
+                <div class="product-info">
+                    <h2><b>IBM Personal Computer</b></h2>
+                    <p>
+                    IBM introduced its first personal computer, the IBM 5150, which revolutionized computing for businesses and households. It featured a modular design, an Intel 8088 processor, and a user-friendly operating system, MS-DOS. The IBM PC became the standard for modern computing and inspired an entire industry of compatible hardware.
+                </p>
+                </div>
+            </div>
+                  <!-- Back Button -->
+<div class="back-button-container" style="margin-top: 20px; text-align: center;">
+    <button id="back-button" class="back-button" onclick="goBack()">Back</button>
+</div>
+        </section>
+    </main>
+
+   <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
